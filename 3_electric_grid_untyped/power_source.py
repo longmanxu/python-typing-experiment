@@ -8,7 +8,7 @@ class PowerSource(abc.ABC):
         ...
 
     @abc.abstractmethod
-    def simulate_time(self, time):
+    def simulate_time(self, time: float) -> None:
         ...
 
     @abc.abstractmethod
