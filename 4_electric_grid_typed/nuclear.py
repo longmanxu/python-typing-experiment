@@ -91,7 +91,7 @@ class OldNuclearPowerPlant(NuclearPowerPlant):
         super().__init__(OldNuclearReactor() for _ in range(4))
 
     def get_id(self) -> str:
-        return 'CAa'
+        return 'CA'
 
 
 class NewNuclearPowerPlant(NuclearPowerPlant):
