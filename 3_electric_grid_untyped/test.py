@@ -58,7 +58,7 @@ def test_old_nuclear_power_plant_id():
         plant_type = f.readline().rstrip()
 
     plant = create_power_source(plant_type)
-    assert plant.get_id() == 'CA'
+    assert plant.get_id() == 'CAa'
 
 
 if __name__ == '__main__':
