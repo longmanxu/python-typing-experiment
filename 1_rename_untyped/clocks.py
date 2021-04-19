@@ -28,7 +28,7 @@ class Watch:
 
 class Microwave:
     def __init__(self):
-        self.clock = self.__make_timer()
+        self.timer = self.__make_timer()
 
     @staticmethod
     def __make_timer():
@@ -37,7 +37,7 @@ class Microwave:
 
 class Referee:
     def __init__(self):
-        self.clock = self.__make_stopwatch()
+        self.stopwatch = self.__make_stopwatch()
 
     @staticmethod
     def __make_stopwatch():
@@ -55,16 +55,16 @@ def set_watch_time(w, t):
 
 
 def get_microwave_time(m):
-    return m.clock.time_left
+    return m.timer.time_left
 
 
 def set_microwave_time(m, t):
-    m.clock.time_left = t
+    m.timer.time_left = t
 
 
 def get_referee_time(r):
-    return r.clock.time
+    return r.stopwatch.time
 
 
 def set_referee_time(r, t):
-    r.clock.time = t
+    r.stopwatch.time = t

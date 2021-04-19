@@ -63,7 +63,7 @@ def test_old_nuclear_power_plant_id() -> None:
         nuclear.OldNuclearPowerPlant,
         create_power_source(plant_type)
     )
-    assert plant.get_id() == 'CA'
+    assert plant.get_id() == 'CAa'
 
 
 if __name__ == '__main__':
